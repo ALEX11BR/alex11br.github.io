@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,WACI,iBACJ,CACA,WACI,UACJ","file":"main.2e746383.chunk.css","sourcesContent":[".addbutton {\r\n    text-align: center;\r\n}\r\n.listgroup {\r\n    width: 100%;\r\n}"]}
