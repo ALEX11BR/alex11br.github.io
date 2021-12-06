@@ -1,12 +1,14 @@
 ---
-title: "ThemeChanger"
+title: "ThemeChanger, my first serious linux deskop app"
 date: 2021-12-06T07:51:57Z
-draft: true
+draft: false
 ---
-ThemeChanger is an application that I made, one of my more ambitious projects so far. It is made for linux systems (and it should work on other friends like BSDs), and it does what it says: it changes themes. It is made to work with various desktop environments or none at all. While there is simmilar app called `lxappearance` which is also a GUI theme changer, my app has a bunch of extra features.
+![A screenshot of our lovely ThemeChanger](https://raw.githubusercontent.com/ALEX11BR/ThemeChanger/master/screenshot1.png)
+
+[ThemeChanger](https://github.com/ALEX11BR/ThemeChanger) is an application that I made, one of my more ambitious projects so far. It is made for linux systems (and it should work on other friends like BSDs), and it does what it says: it changes themes. It is made to work with various desktop environments or none at all. While there is similar app called `lxappearance` which is also a GUI theme changer, my app has a bunch of extra features.
 
 ## How I got the idea for this app
-As I started using linux more and more, I eventually learned about tiling window managers, and started using them instead of regular desktop environments. I was a little bit too obsessed with ensuring a consistent look&feel for my desktop, and the available GUI tools had some limitations that I felt could be addressed by a new application that I could write. So I started working on a such application: I attempted multiple programming languages, but ended up with Python, as I could do stuff easier with it.
+As I started using linux more and more, I eventually learned about tiling window managers, and started using them instead of regular desktop environments. I was a little bit too obsessed with ensuring a consistent look & feel for my desktop, and the available GUI tools had some limitations that I felt could be addressed by a new application that I could write. So I started working on a such application: I attempted multiple programming languages, but ended up with Python, as I could do stuff easier with it.
 
 ## Features of the app
 - Sets GTK themes.
@@ -27,15 +29,20 @@ After fixing some early bugs, I started working on adding a new feature: thumbna
 
 While the searchable theme list made the app unique in a good sense, it turned out that it made the app print tons of stacktraces, and I had to figure out the nasty code that produced this stacktrace, that I managed to fix, alongside other hidden issues.
 
-Alongside GTK, there's another big GUI toolkit for linux: QT. While the GTK themes are somewhat standardised for each version, QT's theming is messier. A popular method of theming QT is Kvantum, for which many GTK themes have a counterpart. Adding support for setting its themes wasn't the hardest feature to be implemented, though there's some stuff that can be further implemented for a more complete theme changing experience.
+Alongside GTK, there's another big GUI toolkit for linux: QT. While the GTK themes are somewhat standardised for each version, QT's theming is messier. A popular method of theming QT is Kvantum, for which many GTK themes have a counterpart. Adding support for setting its themes wasn't the hardest feature to be implemented, though there's some stuff that can be further implemented for a more complete theme changing experience. That being said, this feature made the app unique and distinguishable enough to give me confidence in [promoting it to public linux-related circles](https://www.reddit.com/r/linux/comments/pfgl79/themechanger_a_theme_changing_utility_for_linux/).
 
-The next feature to get implemented is live reloading. In linux, this is possible using XSETTINGS, a protocol through which various values related to look&feel can get set and updated instantaneousely across the apps that use them. To make XSETTINGS work, you need a daemon that takes care of these values. There are a few daemons available, ranging from the DE-independent `xsettingsd` to the sollutions provided by each DE. Each daemon has its own method of updating the values, and I had to implement methods of doing that for each daemon. I first implemented support for `xsettingsd`, then gradually for the daemons which come with the DEs of linux, with methods of determining which daemon is running, if any.
+The next feature to get implemented is live reloading. In linux, this is possible using XSETTINGS, a protocol through which various values related to look & feel can get set and updated instantaneousely across the apps that use them. To make XSETTINGS work, you need a daemon that takes care of these values. There are a few daemons available, ranging from the DE-independent `xsettingsd` to the sollutions provided by each DE. Each daemon has its own method of updating the values, and I had to implement methods of doing that for each daemon. I first implemented support for `xsettingsd`, then gradually for the daemons which come with the DEs of linux, with methods of determining which daemon is running, if any.
 
 This is where the app stands at the moment of writing this post. I have some plans for the future, though.
 
 ## Plans for the future
-First, I plan to add a methid to get thenes online, from the dedicated sites like [gnome-look.com] and friends. While their sites' UX really sucks, they supposedly provide some APIs that can be used, though I couldn't yet wrap my head around how they work. Hopefully I will acheive that eventually...
+First, I plan to add a method to get themes online, from the dedicated sites like https://gnome-look.org and friends. While their sites' UX really sucks, they supposedly provide some APIs that can be used, though I couldn't yet wrap my head around how they work. Hopefully I will achieve that eventually...
 
-This is a big milestone to be acheived. I also plan on adding some more theming options to my app, like whether clicking the scrollbar will move the content directly to the selected position or page by page. I also want all these options to be applied to Kvantum too, which requires copying a theme file into Kvantum's config folder, which requires storing for each theme its path, which is also useful for another feature I want to add: the ability to remove locally installed themes.
+This is a big milestone to be achieved. I also plan on adding some more theming options to my app, like whether clicking the scrollbar will move the content directly to the selected position or page by page. I also want all these options to be applied to Kvantum too, which requires copying a theme file into Kvantum's config folder, which requires storing for each theme its path, which is also useful for another feature I want to add: the ability to remove locally installed themes.
 
-Besides these, I feel like the code I've written isn't the cleanest, most well-organised there is (after all, this is, like, my first serious programming project that I share with the public), and I feel like I should make something about it sometime, maybe...
+Besides these, I feel like the code I've written isn't the cleanest, most well-organized there is (after all, this is, like, my first serious programming project that I share with the public), and I feel like I should make something about it sometime, maybe...
+
+## How to get this app
+The [GitHub README](https://github.com/ALEX11BR/ThemeChanger) has instructions to install the app from source, and from some distros' repos:
+- __Arch Linux & friends__: the `themechanger-git` AUR package
+- __Nix(OS)__: the `themechanger` nixpkgs package
