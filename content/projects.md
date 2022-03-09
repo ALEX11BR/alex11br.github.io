@@ -7,6 +7,7 @@ I have various projects that I've made across the years of my existence. As I am
 
 - [Compunere de oscilații paralele](/fizoscomp) ([source](https://github.com/ALEX11BR/fizoscom)) 🇷🇴
 - [Proportional election methods simulation](/proportional-election-simulation) ([source](https://github.com/ALEX11BR/proportional-election-simulation))
+- [MyFSharpSnake](https://github.com/ALEX11BR/MyFSharpSnake) is yet another Snake game clone written in F#. It has a terminal version and a web one, which can be played [here](/myfsharpsnake-web).
 - [AltSFX](https://github.com/ALEX11BR/AltSFX) is an alternative sound effects pack for OpenTTD, and is available through the in-game online content system.
 - [ThemeChanger](https://github.com/ALEX11BR/ThemeChanger) lets you change GUI themes on Linux with ease. ([blogpost](/posts/themechanger))
 - [gxhk](https://github.com/ALEX11BR/gxhk) is a hotkey daemon for X configurable on-the-fly using sockets. ([blogpost](/posts/gxhk))
