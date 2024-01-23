@@ -8,7 +8,7 @@
 %	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 %	copies of the Software, and to permit persons to whom the Software is
 %	furnished to do so, subject to the following conditions:
-%	
+%
 %	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 %	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 %	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -16,7 +16,7 @@
 %	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 %	THE SOFTWARE.
-%	
+%
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
@@ -47,7 +47,7 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -61,9 +61,9 @@
 %for lists within experience section
 \usepackage{enumitem}
 
-\newcolumntype{L}{>{\raggedright\arraybackslash}X} 
-\newcolumntype{C}{>{\centering\arraybackslash}X} 
-\newcolumntype{R}{>{\raggedleft\arraybackslash}X} 
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
@@ -72,11 +72,11 @@
 \setlength{\fullcollw}{0.47\textwidth}
 
 %custom \section
-\usepackage{titlesec}				
+\usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{multirow}
 
-%CV Sections inspired by: 
+%CV Sections inspired by:
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
@@ -98,7 +98,7 @@
 \begin{document}
 
 % non-numbered pages
-\pagestyle{empty} 
+\pagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -121,10 +121,10 @@
 \\[7.5pt]
 \multicolumn{3}{@{}c@{}}{
     \small
-    \href{https://github.com/ALEX11BR}{\raisebox{-0.05\height}\faGithub\ ALEX11BR} \ $|$ \ 
-    \href{https://alex11br.github.io}{\raisebox{-0.05\height}\faGlobe \ alex11br.github.io} \ $|$ \ 
-    \href{mailto:alexioanpopa11@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ alexioanpopa11@gmail.com} \ $|$ \ 
-    \href{https://www.linkedin.com/in/ioan-alexandru-popa-3a5597257/}{\raisebox{-0.05\height}{\faLinkedin}\ LinkedIn} \ $|$ \ 
+    \href{https://github.com/ALEX11BR}{\raisebox{-0.05\height}\faGithub\ ALEX11BR} \ $|$ \
+    \href{https://alex11br.github.io}{\raisebox{-0.05\height}\faGlobe \ alex11br.github.io} \ $|$ \
+    \href{mailto:alexioanpopa11@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ alexioanpopa11@gmail.com} \ $|$ \
+    \href{https://www.linkedin.com/in/ioan-alexandru-popa-3a5597257/}{\raisebox{-0.05\height}{\faLinkedin}\ LinkedIn} \ $|$ \
     \href{tel:+40765081127}{\raisebox{-0.05\height}{\faPhone*}\ +40 765 081 127}
 } \\
 \end{tabularx}
@@ -161,7 +161,7 @@ Politehnica University of Bucharest, \textbf{Bachelor in Computer Science} & \hf
         \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
             \item Implemented raw \textbf{Rust} bindings for \textbf{emscripten} system functions. Emscripten is a compiler toolchain that allows C \& C++ code to be ran on web pages using \textbf{WASM}. Emscripten is the easiest way of building Rust code for web that depends on C or C++ libraries.
             \item Built Rust-friendly wrappers for \textbf{29} emscripten-specific functions.
-            \item Over \textbf{175} downloads on \texttt{crates.io} for the \texttt{emscripten-functions} crate (the Rust-friendly wrappers), and over \textbf{215} for \texttt{emscripten-functions-sys} (the raw Rust bindings).
+            \item Over \textbf{195} downloads on \texttt{crates.io} for the \texttt{emscripten-functions} crate (the Rust-friendly wrappers), and over \textbf{245} for \texttt{emscripten-functions-sys} (the raw Rust bindings).
         \end{itemize}
     \end{minipage}
 }
@@ -204,6 +204,13 @@ Politehnica University of Bucharest, \textbf{Bachelor in Computer Science} & \hf
 %}
 %\end{tabularx}
 
+\section{Open source contributions}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+    \item Implemented the option to hide the ``mentions'' tab in the Tiny IRC client.
+    \item Enhanced the tests suite of Lemmy and \verb|rust-vmm/kvm-ioctls|.
+    \item Added an SVG map with the Romanian counties to \verb|VictorCazanave/svg-maps|.
+    \item Fixed typos in OpenTTD and Unikraft.
+\end{itemize}
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
@@ -212,25 +219,25 @@ Politehnica University of Bucharest, \textbf{Bachelor in Computer Science} & \hf
 \multicolumn{2}{@{}X@{}}{
     \begin{minipage}[t]{\linewidth}
         \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-            \item \textbf{Intermediate}: C, C++, Linux \& shell scripting, Python, Rust, TypeScript
+            \item \textbf{Intermediate}: C, C++, JavaScript, Linux \& shell scripting, Python, Rust, TypeScript
             \item \textbf{Basic}: CSS, C\#, Emscripten, F\#, Git, Go, Godot Engine, GTK3, HTML, Java, \LaTeX, Lua, Matlab/Octave, React, SQL, Svelte, x86 Assembly
         \end{itemize}
     \end{minipage}
-} 
+}
 \end{tabularx}
 
-\section{Extracurricular activities}
-\begin{tabularx}{\linewidth}{@{}l r@{}}
-\textbf{Security Summer School}, binary track & \hfill \faCalendar* Jun 2023 - Jul 2023 \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{
-    \begin{minipage}[t]{\linewidth}
-        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-            \item Attended lectures and solved exercises about finding and exploiting common executable vulnerabilities.
-            \item Took part in 2 team-based Capture the Flag events where given executables had to be exploited to find a hidden ``flag''.
-        \end{itemize}
-    \end{minipage}
-} 
-\end{tabularx}
+%\section{Extracurricular activities}
+%\begin{tabularx}{\linewidth}{@{}l r@{}}
+%\textbf{Security Summer School}, binary track & \hfill \faCalendar* Jun 2023 - Jul 2023 \\[3.75pt]
+%\multicolumn{2}{@{}X@{}}{
+%    \begin{minipage}[t]{\linewidth}
+%        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+%            \item Attended lectures and solved exercises about finding and exploiting common executable vulnerabilities.
+%            \item Took part in 2 team-based Capture the Flag events where given executables had to be exploited to find a hidden ``flag''.
+%        \end{itemize}
+%    \end{minipage}
+%}
+%\end{tabularx}
 
 \section{Volunteer activities}
 
@@ -242,7 +249,7 @@ Politehnica University of Bucharest, \textbf{Bachelor in Computer Science} & \hf
             \item Helped teach \textbf{29} students over a weekend the basics of \textbf{Rust} programming and CLI app development.
         \end{itemize}
     \end{minipage}
-} 
+}
 \end{tabularx}
 
 %\begin{tabularx}{\linewidth}{@{}l r@{}}
@@ -253,7 +260,7 @@ Politehnica University of Bucharest, \textbf{Bachelor in Computer Science} & \hf
 %            \item Taught \textbf{2} students over a weekend the basics of desktop application development using \textbf{Tauri}.
 %        \end{itemize}
 %    \end{minipage}
-%} 
+%}
 %\end{tabularx}
 
 %\vfill
