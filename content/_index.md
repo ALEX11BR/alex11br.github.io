@@ -4,7 +4,7 @@ date: 2021-11-06T22:11:46+02:00
 draft: false
 ---
 
-Hi there! I'm Popa Ioan Alexandru (aka ALEX11BR or other nicks), a 20-year-old guy from Romania who's trying to find meaning in life using computers.
+Hi there! I'm Popa Ioan Alexandru (aka ALEX11BR or other nicks), a 21-year-old guy from Romania who's trying to find meaning in life using computers.
 
 I have various [projects](projects), mostly computer-related, but not only.
 I also have a [resume](resume/resume.pdf).
