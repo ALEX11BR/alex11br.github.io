@@ -1,5 +1,7 @@
 .hugo_build.lock
 
+/public
+
 *.aux
 *.fdb_latexmk
 *.fls
