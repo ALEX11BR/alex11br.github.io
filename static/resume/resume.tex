@@ -25,7 +25,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -134,7 +134,21 @@
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-Politehnica University of Bucharest, \textbf{Bachelor in Computer Science} & \hfill \faCalendar*[regular] Oct 2022 - Jul 2026 \\[3.75pt]
+Aarhus University, \textbf{Master in Computer Science} & \hfill \faCalendar*[regular] Aug 2026 - Jun 2028 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+            \item Relevant Coursework:
+            Compilation (\textbf{OCaml}),
+            Formal software verification (\textbf{Rocq})
+            %\item \textbf{Cumulative grades}: 9.22/10
+        \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+Politehnica University of Bucharest, \textbf{Bachelor in Computer Science} (Engineering) & \hfill \faCalendar*[regular] Oct 2022 - Jul 2026 \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
     \begin{minipage}[t]{\linewidth}
         \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
@@ -149,7 +163,7 @@ Politehnica University of Bucharest, \textbf{Bachelor in Computer Science} & \hf
             %Local computer networks,
             %Introduction in cybersecurity,
             Databases (Oracle \textbf{SQL})
-            \item \textbf{Cumulative grades}: 9.37/10
+            \item \textbf{Cumulative grades}: 9.22/10
         \end{itemize}
     \end{minipage}
 }
@@ -182,7 +196,7 @@ Software Infrastructure Engineering Intern & \hfill \faCalendar*[regular] Jun 20
 \section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Personal dotfiles management system} (\href{https://github.com/ALEX11BR/dotfiles}{GitHub link}) & \hfill \faCalendar*[regular] Mar 2021 - Oct 2025 \\[3.75pt]
+\textbf{Personal dotfiles management system} (\href{https://github.com/ALEX11BR/dotfiles}{GitHub link}) & \hfill \faCalendar*[regular] Mar 2021 - May 2026 \\[3.75pt]
 \multicolumn{2}{@{}X@{}}{
     \begin{minipage}[t]{\linewidth}
         \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
@@ -213,7 +227,7 @@ Software Infrastructure Engineering Intern & \hfill \faCalendar*[regular] Jun 20
         \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
             \item Implemented raw \textbf{Rust} bindings for \textbf{emscripten} system functions. Emscripten is a compiler toolchain that allows C \& C++ code to be ran on web pages using \textbf{WASM}.
             \item Built and documented Rust-friendly wrappers for \textbf{29} emscripten-specific functions.
-            \item Over \textbf{9300} downloads on \texttt{crates.io} for the \href{https://crates.io/crates/emscripten-functions}{\texttt{emscripten-functions}} crate (the Rust-friendly wrappers), and over \textbf{9700} for \href{https://crates.io/crates/emscripten-functions-sys}{\texttt{emscripten-functions-sys}} (the raw Rust bindings).
+            \item Over \textbf{12,000} downloads on \texttt{crates.io} for the \href{https://crates.io/crates/emscripten-functions}{\texttt{emscripten-functions}} crate (the Rust-friendly wrappers), and over \textbf{14,000} for \href{https://crates.io/crates/emscripten-functions-sys}{\texttt{emscripten-functions-sys}} (the raw Rust bindings).
         \end{itemize}
     \end{minipage}
 }
@@ -361,28 +375,28 @@ Software Infrastructure Engineering Intern & \hfill \faCalendar*[regular] Jun 20
 %}
 %\end{tabularx}
 
-%\section{Open source contributions}
-%\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-%    \item Added my ThemeChanger application to nixpkgs. \hfill \faCalendar*[regular] Oct 2021 - Jul 2024
-%    \item Enhanced the tests suite of Lemmy and \verb|rust-vmm/kvm-ioctls|. \hfill \faCalendar*[regular] Jan 2024
-%    \item Implemented the option to hide the ``mentions'' tab in the Tiny IRC client. \hfill \faCalendar*[regular] Jan 2023
-%    %\item Fixed typos in OpenTTD and Unikraft. \hfill \faCalendar*[regular] Mar 2022 - Oct 2023
-%\end{itemize}
+\section{Open source contributions}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+    \item Added the ThemeChanger application to nixpkgs. \hfill \faCalendar*[regular] Oct 2021 - Feb 2025
+    \item Enhanced the tests suite of Lemmy and \verb|rust-vmm/kvm-ioctls|. \hfill \faCalendar*[regular] Jan 2024
+    \item Implemented the option to hide the ``mentions'' tab in the Tiny IRC client. \hfill \faCalendar*[regular] Jan 2023
+    %\item Fixed typos in OpenTTD and Unikraft. \hfill \faCalendar*[regular] Mar 2022 - Oct 2023
+\end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-\multicolumn{2}{@{}X@{}}{
-    \begin{minipage}[t]{\linewidth}
-        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-            \item \textbf{Intermediate}: C, C++, JavaScript, Linux \& shell scripting, Python, Rust, TypeScript
-            \item \textbf{Basic}: Bazel, CSS, C\#, Docker,  Emscripten, F\#, Git, Go, Godot Engine, GTK3, HTML, Java, \LaTeX, Lua, Matlab/Octave, Racket/Scheme, React, SQL, Svelte, x86 Assembly
-        \end{itemize}
-    \end{minipage}
-}
-\end{tabularx}
+%\section{Skills}
+%\begin{tabularx}{\linewidth}{@{}l X@{}}
+%\multicolumn{2}{@{}X@{}}{
+%    \begin{minipage}[t]{\linewidth}
+%        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+%            \item \textbf{Intermediate}: C, C++, JavaScript, Linux \& shell scripting, Python, Rust, TypeScript
+%            \item \textbf{Basic}: Bazel, CSS, C\#, Docker,  Emscripten, F\#, Git, Go, Godot Engine, GTK3, HTML, Java, \LaTeX, Lua, Matlab/Octave, Racket/Scheme, React, SQL, Svelte, x86 Assembly
+%        \end{itemize}
+%    \end{minipage}
+%}
+%\end{tabularx}
 
 %\vfill
 %\center{\footnotesize Last updated: \today}
